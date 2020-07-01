@@ -1,0 +1,68 @@
+{
+	"easycom":{
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/family/family",
+			"style": {
+				"navigationBarTitleText":"家庭列表",
+				"enablePullDownRefresh":true
+			}
+		}
+	    ,{
+	        "path" : "pages/member/member",
+	        "style" : {
+				"navigationBarTitleText":"家庭成员"
+			}
+	    }
+	    ,{
+	        "path" : "pages/news/news",
+	        "style" : {
+				"navigationBarTitleText":"家族活动"}
+	    }
+		,{
+		    "path" : "pages/family-detail/family-detail",
+		    "style" : {"navigationBarTitleText":"家庭详情"}
+		}
+		,{
+		    "path" : "pages/member-detail/member-detail",
+		    "style" : {"navigationBarTitleText":"成员详情"}
+		}
+		,{
+			    "path" : "pages/index/index",
+			    "style" : {}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "家族信息",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar":{
+		"list":[
+			{
+				"text":"家庭",
+				"pagePath":"pages/family/family",
+				"iconPath":"static/icon/home.png",
+				"selectedIconPath":"static/icon/home-active.png"
+			},
+			{
+				"text":"成员",
+				"pagePath":"pages/member/member",
+				"iconPath":"static/icon/member.png",
+				"selectedIconPath":"static/icon/member-active.png"
+			},
+			{
+				"text":"通知",
+				"pagePath":"pages/news/news",
+				"iconPath":"static/icon/news.png",
+				"selectedIconPath":"static/icon/news-active.png"
+			}
+		],
+		"borderStyle":"white",
+		"selectedColor":"#b50e03",
+		"color":"#ccc"
+	}
+}
